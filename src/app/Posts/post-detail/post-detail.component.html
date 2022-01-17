@@ -1,0 +1,20 @@
+<mat-card>
+     <mat-card-title>{{post.title}}</mat-card-title>
+    
+     <mat-card-content>
+       <p>{{post.body}}</p>
+       
+     </mat-card-content>
+
+   <mat-card class="card-size" *ngFor = "let comment of comments">
+     <mat-card-title>{{comment.name}}</mat-card-title>
+     <mat-card-subtitle>{{comment.email}}</mat-card-subtitle>
+     <mat-card-content>
+       <p>{{comment.body}}</p>
+     </mat-card-content>
+   </mat-card>
+   
+   <mat-card-actions>
+     <button mat-button (click)="deletepost()">Delete</button>
+   </mat-card-actions>
+</mat-card>

@@ -1,0 +1,16 @@
+<mat-card class="card-margin">
+  <form [formGroup]="postForm">
+
+    <mat-form-field appearance="fill">
+      <mat-label>Title</mat-label>
+      <input matInput formControlName="title">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Body</mat-label>
+      <textarea matInput formControlName="content"></textarea>
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="onAddPost()">Save Post
+    </button>
+  </form>
+</mat-card>

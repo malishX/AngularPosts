@@ -1,0 +1,16 @@
+:host{
+     Display: block;
+     /* margin-top: 1rem; */
+   }
+   .info-text{
+     text-align: center;
+   }
+   
+   .card-size{
+        margin-top: 10px;
+        margin-bottom: 10px;
+   }
+   .flex-container{
+        display: flex;
+        justify-content: end;
+   }
